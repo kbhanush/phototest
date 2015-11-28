@@ -1,0 +1,18 @@
+<ion-view view-title="Register">
+  <ion-content padding="true">
+  		<form ng-submit="register(user)">              
+            <input type="text" ng-model="user.username" class="form-control" placeholder="username / handle" autofocus required><br>             
+            <input type="email" ng-model="user.email" class="form-control" placeholder="email id" autofocus required><br>
+            <input type="password" ng-model="user.password" class="form-control" placeholder="password" autofocus required><br>
+           
+
+            <button ng-click="showActionSheet()" class="button button-block button-primary">Add Profile pic</button>
+
+            <input type="submit" value="Post" class="button button-block btn-default"> 
+                           
+
+          </form>
+      
+      <img ng-src="{{profilePic}}" style="max-width: 25%">
+    </ion-content>
+</ion-view>
